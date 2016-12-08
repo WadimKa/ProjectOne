@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Project One</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="listOfLinks">
+        <item>http://online.radiorecord.ru:8101/rr_128</item>
+        <item>http://radio.russkoe.fm:8000/russkoefm_mp3</item>
+        <item>http://iskatel.hostingradio.ru:8015/iskatel-128.mp3</item>
+        <item>http://air2.radiorecord.ru:805/ps_320</item>
+        <item>http://radiok.pro:8000/128</item>
+        <item>http://live.shtorm.fm:8000/mp3_rushtorm</item>
+        <item>http://onair.radioice.ru:8000/mp3_192</item>
+        <item>http://europarussia.ru:8000/live</item>
+        <item>http://stream01.emgsound.ru/europaplus128.mp3</item>
+        <item>http://eu2.radioboss.fm:8185/stream</item>
+        <item>http://icecast.piktv.cdnvideo.ru/vanya?9</item>
+        <item>http://62.109.4.223:8000/radio</item>
+        <item>http://ruhit.imgradio.pro/RusHit48</item>
+        <item>http://friends-of-radius.ethz.ch:8000/radiocrazy-classical.mp3</item>
+    </string-array>
+
+    <string-array name="listOfNames">
+        <item>Radio Record</item>
+        <item>Русское FM</item>
+        <item>Радио Искатель</item>
+        <item>Пиратская станция</item>
+        <item>РАДИОК</item>
+        <item>Шторм FM</item>
+        <item>Radio ICE</item>
+        <item>EuropaRussia</item>
+        <item>Европа плюс</item>
+        <item>Свое FM</item>
+        <item>(Радио) Ваня</item>
+        <item>Sound Park Deep</item>
+        <item>Русский хит</item>
+        <item>Swiss Internet Radio Classical</item>
+    </string-array>
+</resources>
