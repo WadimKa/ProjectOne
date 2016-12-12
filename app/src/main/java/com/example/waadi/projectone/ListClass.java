@@ -12,17 +12,22 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by waadi on 29.11.2016.
  */
 
 public class ListClass extends AppCompatActivity {
+    String ATTRIBUTE_NAME="name", ATTRIBUTE_PROP = "prop", ATTRIBUTE_URL = "url";
     String [] links, names, properties ;
+    ArrayList<String> linksBD, namesBD, propertiesBD ;
     ListView listView;
     DBHelper dbHelper;
     TextView textView;
@@ -37,8 +42,12 @@ public class ListClass extends AppCompatActivity {
         names = getResources().getStringArray(R.array.listOfNames);
         properties = getResources().getStringArray(R.array.Properties);
 
+        dbHelper = new DBHelper(this, names, properties, links);
 
-        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(this, R.layout.list, names);
+        String [] from = {ATTRIBUTE_NAME, ATTRIBUTE_PROP};
+        int [] to = {R.id.textViewName, R.id.textViewProp};
+
+        SimpleAdapter stringArrayAdapter = new SimpleAdapter(this, putForSimpleAdapter(), R.layout.list_for_main_screen, from, to);
         listView.setAdapter(stringArrayAdapter);
 
 
@@ -55,33 +64,39 @@ public class ListClass extends AppCompatActivity {
     }
 
     public void addNew(View view) {
-        Toast.makeText(this, showDBList(""),Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, showDBList(""),Toast.LENGTH_LONG).show();
     }
 
-    public String showDBList(String nameColumn){
-        dbHelper = new DBHelper(this, names, properties, links);
+    public ArrayList<String> showDBList(String nameColumn){
         SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.query("mytable", null, null, null, null, null, null);
         ArrayList<String> strings = new ArrayList<>();
         if(cursor.moveToFirst()){
-            int colID = cursor.getColumnIndex("id");
-            int colName = cursor.getColumnIndex("name");
-            int colProp = cursor.getColumnIndex("prop");
-            int colUrl = cursor.getColumnIndex("url");
-
+            int columnId = cursor.getColumnIndex(nameColumn);
             do{
-                String buble = "--"+cursor.getString(colName)+"--"+cursor.getString(colProp)+"--"+cursor.getString(colUrl);
-                strings.add(buble);
+                strings.add(cursor.getString(columnId));
             }while(cursor.moveToNext());
         }else{
             cursor.close();
         }
         cursor.close();
         dbHelper.close();
-        return strings.get(2);
+        return strings;
     }
 
-    public void putForSimpleAdapter(){
-        
+    public ArrayList<Map<String,Object>> putForSimpleAdapter(){
+        ArrayList<String> arrNames = showDBList("name");
+        ArrayList<String> arrProperties = showDBList("prop");
+        ArrayList<String> arrUrl = showDBList("url");
+        ArrayList<Map<String,Object>> data = new ArrayList<>(arrNames.size());
+        Map<String,Object> map;
+        for(int i = 0;i<arrNames.size();i++){
+            map = new HashMap<String,Object>();
+            map.put(ATTRIBUTE_NAME, arrNames.get(i));
+            map.put(ATTRIBUTE_PROP, arrProperties.get(i));
+            map.put(ATTRIBUTE_URL, arrUrl.get(i));
+            data.add(map);
+        }
+        return data;
     }
 }
