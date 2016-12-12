@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7a34262b0fe76dd1ee7f904954dabaeffea983e0">
+        sha1="82eedf7952fc9756b7873ce50ffbfbfa94be65ff">
         <dex dex="D:\proj\ProjectOne\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_6e8f153a7626c850da778879ac531eb267b1ca8c.jar" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f381ef830f066c43d7073f32fa28fca9653b8504">
+        sha1="ade8c02898a8741bf4481b3f55312726ae4af068">
         <dex dex="D:\proj\ProjectOne\app\build\intermediates\pre-dexed\debug\instant-run_464d99d77290511fc1fc0f86a8ba2a5772a3e263.jar" />
     </item>
     <item
