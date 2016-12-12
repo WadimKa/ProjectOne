@@ -2,36 +2,100 @@
     <string name="app_name">Project One</string>
     <string name="title_activity_main">MainActivity</string>
     <string-array name="listOfLinks">
-        <item>http://online.radiorecord.ru:8101/rr_128</item>
-        <item>http://radio.russkoe.fm:8000/russkoefm_mp3</item>
-        <item>http://iskatel.hostingradio.ru:8015/iskatel-128.mp3</item>
-        <item>http://air2.radiorecord.ru:805/ps_320</item>
-        <item>http://radiok.pro:8000/128</item>
-        <item>http://live.shtorm.fm:8000/mp3_rushtorm</item>
-        <item>http://onair.radioice.ru:8000/mp3_192</item>
-        <item>http://europarussia.ru:8000/live</item>
-        <item>http://stream01.emgsound.ru/europaplus128.mp3</item>
-        <item>http://eu2.radioboss.fm:8185/stream</item>
-        <item>http://icecast.piktv.cdnvideo.ru/vanya?9</item>
-        <item>http://62.109.4.223:8000/radio</item>
-        <item>http://ruhit.imgradio.pro/RusHit48</item>
-        <item>http://friends-of-radius.ethz.ch:8000/radiocrazy-classical.mp3</item>
+        <item>http://ep128.hostingradio.ru:8030/ep128</item>
+        <item>http://air.radiorecord.ru:8101/rr_128</item>
+        <item>http://icecast.russkoeradio.cdnvideo.ru/rr.mp3</item>
+        <item>http://81.19.85.197/echo.mp3</item>
+        <item>http://nashe.streamr.ru/nashe-128.mp3</item>
+        <item>http://icecast.radiohitfm.cdnvideo.ru/hit.mp3</item>
+        <item>http://ic3.101.ru:8000/v1_1</item>
+        <item>http://ic3.101.ru:8000/v5_1</item>
+        <item>http://ic3.101.ru:8000/v11_1</item>
+        <item>http://bookradio.hostingradio.ru:8069/fm</item>
+        <item>http://apps.imgradio.ru/Dorojnoe-001</item>
+        <item>http://online.radiorecord.ru:8102/rus_128</item>
+        <item>http://nashe.streamr.ru/jazz-128.mp3</item>
+        <item>http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_128kbps</item>
+        <item>http://sportfm.hostingradio.ru:8050/sportfm128.mp3</item>
+        <item>http://89.208.99.16:8088/zvezda_128</item>
+        <item>http://s11.imgradio.pro/RusHit48</item>
+        <item>http://zaycevfm.cdnvideo.ru/ZaycevFM_pop_128.mp3</item>
+        <item>http://radio.mvd.ru:8000/mv128.mp3</item>
+        <item>http://radiosilver.corbina.net:8000/silver128a.mp3</item>
+        <item>http://icecast.piktv.cdnvideo.ru/classic</item>
+        <item>http://online-kissfm.tavrmedia.ua/KissFM</item>
+        <item>http://radio.rushtorm.ru:8000/mp3_rushtorm</item>
+        <item>http://www.radiok.pro:8000/128</item>
+        <item>http://sc-sax4ever.1.fm:10148/</item>
+        <item>http://buu.hostingradio.ru:8005/radio</item>
+        <item>http://193.242.149.55:8000/kfm</item>
+        <item>http://s03.volnorez.com:8000/live/yo-moyo/0f03ede9d5a6b1c3301228b5933c3679c1e07.mp3</item>
+        <item>http://online.brut.to/RadioBrutto</item>
+        <item>http://93.84.113.142:8000/radio</item>
     </string-array>
 
     <string-array name="listOfNames">
-        <item>Radio Record</item>
-        <item>Русское FM</item>
-        <item>Радио Искатель</item>
-        <item>Пиратская станция</item>
-        <item>РАДИОК</item>
-        <item>Шторм FM</item>
-        <item>Radio ICE</item>
-        <item>EuropaRussia</item>
-        <item>Европа плюс</item>
-        <item>Свое FM</item>
-        <item>(Радио) Ваня</item>
-        <item>Sound Park Deep</item>
-        <item>Русский хит</item>
-        <item>Swiss Internet Radio Classical</item>
+        <item>Европа Плюс</item>
+        <item>Радиорекорд</item>
+        <item>Русское Радио</item>
+        <item>Эхо Москвы</item>
+        <item>Наше Радио</item>
+        <item>Хит FM </item>
+        <item>Энерджи</item>
+        <item>Юмор FM</item>
+        <item>Comedy</item>
+        <item>Радио Книга</item>
+        <item>Дорожное Радио</item>
+        <item>Russian Mix</item>
+        <item>JAZZ</item>
+        <item>Вести FM</item>
+        <item>Спорт FM</item>
+        <item>Радио Звезда</item>
+        <item>Русский Хит</item>
+        <item>Зайцев FM: Pop</item>
+        <item>Милицейская Волна</item>
+        <item>Серебряный Дождь</item>
+        <item>Популярная Классика FM</item>
+        <item>Kiss FM</item>
+        <item>Шторм FM </item>
+        <item>РадиоК</item>
+        <item>Sax4Love</item>
+        <item>Радио Буу!</item>
+        <item>Казак FM</item>
+        <item>Ё-моё</item>
+        <item>Радио Brutto</item>
+        <item>Радио Минск</item>
+    </string-array>
+    <string-array name="Properties">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 </resources>

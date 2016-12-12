@@ -3,6 +3,7 @@ package com.example.waadi.projectone;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,10 +18,13 @@ import android.widget.Toast;
 public class ListClass extends AppCompatActivity {
     String [] items, names ;
     ListView listView;
+    DBHelper dbHelper;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_layout);
+
+        dbHelper = new DBHelper(this);
 
         listView = (ListView) findViewById(R.id.ListViewMain);
 
@@ -38,8 +42,14 @@ public class ListClass extends AppCompatActivity {
                 intent.putExtra("path", items[i]);
                 startActivity(intent);
 
-               // Toast.makeText(getApplicationContext(), items[i], Toast.LENGTH_LONG).show();
+
             }
         });
+    }
+
+    public void addNew(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(R.layout.alert);
+        builder.show();
     }
 }

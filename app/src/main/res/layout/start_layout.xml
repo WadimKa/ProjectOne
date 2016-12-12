@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         app:fabSize="normal"
+        android:onClick="addNew"
         app:srcCompat="@android:drawable/ic_input_get"
         android:id="@+id/floatingActionButton" />
 
